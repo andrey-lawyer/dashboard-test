@@ -8,7 +8,7 @@ export const LinkPagination = ({
 }) => {
   return (
     <NavLink
-      className={`w-[${w}px] h-[${h}px] ${bg} ${text} flex justify-center items-center  border border-solid  border-[#EEEEEE] rounded-[4px]`}
+      className={`${w} ${h} ${bg} ${text} flex justify-center items-center  border border-solid  border-[#EEEEEE] rounded-[4px]`}
       to="/"
     >
       {symbol}
