@@ -51,7 +51,7 @@ export const Header = () => {
           </li>
           <li>
             <NavLink
-              className="flex justify-between l:p-[13px] l:mb-[18px] pr-[13px] rounded-[8px]  aria-[current=page]:bg-[#5932EA] text-white"
+              className="flex justify-between l:p-[13px] l:mb-[18px] pr-[13px] rounded-[8px]  bg-[#5932EA] text-white"
               to="/"
             >
               <div className="flex items-center">
