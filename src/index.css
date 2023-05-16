@@ -1,15 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import-normalize; /* bring in normalize.css styles */
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./fonts/Poppins-Regular.woff') format('woff'),
+    url('./fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./fonts/Poppins-Medium.woff') format('woff'),
+    url('./fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./fonts/Poppins-SemiBold.woff') format('woff'),
+    url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* display: grid;
+  grid-template-columns: 306px 1fr 1fr; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
