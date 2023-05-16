@@ -65,7 +65,7 @@ export const Customers = () => {
             name="search"
           />
         </form>
-        <div className=" absolute top-[167`px] left-0 l:w-[968px]  border-b border-b-[#EEEEEE] "></div>
+        <div className=" absolute top-[167px] left-0 l:w-[968px]  border-b border-b-[#EEEEEE] "></div>
         <table className=" text-min md:text-mid font-medium mb-[31px]">
           <thead className=" ">
             <tr className=" text-left text-[#B5B7C0]  ">
