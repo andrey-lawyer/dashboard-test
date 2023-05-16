@@ -1,7 +1,6 @@
-import { NavLink } from 'react-router-dom';
 import logo from './../images/icons/logo.svg';
-import icons from './../images/icons.svg';
 import photo from './../images/photo.png';
+import { LinkHeader } from './LinkHeader';
 
 export const Header = () => {
   return (
@@ -21,105 +20,45 @@ export const Header = () => {
       <nav className="l:mb-[597px] tracking-[-0.01em] font-medium text-mid text-[#9197B3] ">
         <ul className="flex l:block">
           <li>
-            <NavLink
-              className="flex items-center l:pl-[11px] pr-[13px]  l:py-[11px] l:mb-[18px] rounded-[8px]"
-              to="/"
-            >
-              <svg className="w-[24px] h-[24px] l:mr-[14px] mr-[5px]">
-                <use xlinkHref={`${icons}#icon-key`}></use>
-              </svg>
-              <p className="md:inline hidden "> Dashboard</p>
-            </NavLink>
+            <LinkHeader
+              icon="icon-key"
+              nav="Dashboard"
+              stroke="stroke-[#9197B3]"
+              hidden="hidden"
+            />
           </li>
           <li>
-            <NavLink
-              className="flex justify-between l:p-[13px] pr-[13px]   l:mb-[18px] rounded-[8px]"
-              to="/"
-            >
-              <div className="flex items-center">
-                <svg className="w-[24px] h-[24px] l:mr-[16px] mr-[5px]">
-                  <use xlinkHref={`${icons}#icon-d`}></use>
-                </svg>
-                <p className="md:inline hidden ">Product</p>
-              </div>
-              <div className="flex md:hidden l:flex items-center">
-                <svg className="w-[6px] h-[10px] stroke-[#9197B3]">
-                  <use xlinkHref={`${icons}#icon-bracket`}></use>
-                </svg>
-              </div>
-            </NavLink>
+            <LinkHeader icon="icon-d" nav="Product" stroke="stroke-[#9197B3]" />
           </li>
           <li>
-            <NavLink
-              className="flex justify-between l:p-[13px] l:mb-[18px] pr-[13px] rounded-[8px]  bg-[#5932EA] text-white"
-              to="/"
-            >
-              <div className="flex items-center">
-                <svg className="w-[24px] h-[24px] l:mr-[16px] mr-[5px]">
-                  <use xlinkHref={`${icons}#icon-user`}></use>
-                </svg>
-                <p className="md:inline hidden ">Customers</p>
-              </div>
-              <div className="flex md:hidden l:flex items-center">
-                <svg className="w-[6px] h-[10px]  stroke-white  ">
-                  <use xlinkHref={`${icons}#icon-bracket`}></use>
-                </svg>
-              </div>
-            </NavLink>
+            <LinkHeader
+              icon="icon-user"
+              nav="Customers"
+              stroke="stroke-white"
+              bg="bg-[#5932EA]"
+              text="text-white"
+            />
           </li>
           <li>
-            <NavLink
-              className="flex justify-between l:p-[13px] l:mb-[18px] pr-[13px] rounded-[8px]"
-              to="/"
-            >
-              <div className="flex items-center">
-                <svg className="w-[24px] h-[24px] l:mr-[16px] mr-[5px] ">
-                  <use xlinkHref={`${icons}#icon-wallet`}></use>
-                </svg>
-                <p className="md:inline hidden ">Income</p>
-              </div>
-              <div className="flex md:hidden l:flex items-center ">
-                <svg className="w-[6px] h-[10px] stroke-[#9197B3]">
-                  <use xlinkHref={`${icons}#icon-bracket`}></use>
-                </svg>
-              </div>
-            </NavLink>
+            <LinkHeader
+              icon="icon-wallet"
+              nav="Income"
+              stroke="stroke-[#9197B3]"
+            />
           </li>
           <li>
-            <NavLink
-              className="flex justify-between l:p-[13px] l:mb-[18px] pr-[13px] rounded-[8px]"
-              to="/"
-            >
-              <div className="flex items-center">
-                <svg className="w-[24px] h-[24px] l:mr-[16px] mr-[5px]">
-                  <use xlinkHref={`${icons}#icon-discount`}></use>
-                </svg>
-                <p className="md:inline hidden ">Promote</p>
-              </div>
-              <div className="flex md:hidden l:flex items-center">
-                <svg className="w-[6px] h-[10px] stroke-[#9197B3]">
-                  <use xlinkHref={`${icons}#icon-bracket`}></use>
-                </svg>
-              </div>
-            </NavLink>
+            <LinkHeader
+              icon="icon-discount"
+              nav="Promote"
+              stroke="stroke-[#9197B3]"
+            />
           </li>
           <li>
-            <NavLink
-              className="flex justify-between l:p-[13px] pr-[13px] rounded-[8px]"
-              to="/"
-            >
-              <div className="flex items-center">
-                <svg className="w-[24px] h-[24px] l:mr-[16px] mr-[5px]">
-                  <use xlinkHref={`${icons}#icon-message`}></use>
-                </svg>
-                <p className="md:inline hidden ">Help</p>
-              </div>
-              <div className="flex md:hidden l:flex items-center">
-                <svg className="w-[6px] h-[10px] stroke-[#9197B3]">
-                  <use xlinkHref={`${icons}#icon-bracket`}></use>
-                </svg>
-              </div>
-            </NavLink>
+            <LinkHeader
+              icon="icon-message"
+              nav="Help"
+              stroke="stroke-[#9197B3]"
+            />
           </li>
         </ul>
       </nav>

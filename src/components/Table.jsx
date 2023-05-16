@@ -1,54 +1,29 @@
-import { memo } from 'react';
-
-export const Table = memo(({ users, onIsActive, setIndex, index }) => {
-  const outline = ind => {
-    if (ind === index) return 'outline-red-500 outline outline-4';
-  };
-
-  const onClickOutline = ind => {
-    if (ind === index) setIndex(-1);
-  };
-
-  const active =
-    'bg-[rgb(22,192,152)] bg-opacity-[38%] border-[#00B087] text-[#008767]';
-  const inActive = 'bg-[#FFC5C5] border-[#DF0404] text-[#DF0404]';
-
-  const colorButton = status => {
-    const color = status === 'Active' ? active : inActive;
-    return color;
-  };
-
+export const Table = ({ children }) => {
   return (
-    <tbody className="">
-      {users.map(
-        ({ id, name, company, phone, email, country, status }, ind) => (
-          <tr
-            onClick={() => onClickOutline(ind)}
-            className={`${outline(
-              ind
-            )}  text-[#292D32] border-b border-solid border-b-[#EEEEEE]   }`}
-            key={id}
-          >
-            <td className="">{name}</td>
-            <td className="">{company}</td>
-            <td className="">{phone}</td>
-            <td className="mini:truncate mini:w-[60px] mini:block md:table-cell ">
-              {email}
-            </td>
-            <td className="">{country}</td>
-            <td className="pt-[21px] pb-[21px]">
-              <button
-                className={`${colorButton(
-                  status
-                )} border border-solid rounded-[4px]  w-[50px] md:w-[80px] py-[3px]  `}
-                onClick={() => onIsActive(id)}
-              >
-                {status}
-              </button>
-            </td>
-          </tr>
-        )
-      )}
-    </tbody>
+    <table className=" text-min md:text-mid font-medium mb-[31px]">
+      <thead className=" ">
+        <tr className=" text-left text-[#B5B7C0]  ">
+          <th className="pb-[14px] l:w-[172px] md:w-[132px]  font-medium">
+            Customer Name
+          </th>
+          <th className="pb-[15px] l:w-[131px] md:w-[91px]  font-medium">
+            Company
+          </th>
+          <th className="pb-[15px] l:w-[156px] md:w-[116px]  font-medium">
+            Phone Number
+          </th>
+          <th className="pb-[15px] l:w-[207px] md:w-[167px]  font-medium">
+            Email
+          </th>
+          <th className="pb-[15px] l:w-[140px] md:w-[110px]  font-medium">
+            Country
+          </th>
+          <th className="pb-[15px] md:text-center l:w-[80px]  font-medium">
+            Status
+          </th>
+        </tr>
+      </thead>
+      {children}
+    </table>
   );
-});
+};
