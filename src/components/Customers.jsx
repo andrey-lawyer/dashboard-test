@@ -55,25 +55,24 @@ export const Customers = () => {
           </p>
           <ul className="text-mini flex gap-x-[12px] text-[#404B52] ">
             <li>
-              <LinkPagination w="w-[26px] " h="h-[24px]" symbol="<" />
+              <LinkPagination w="w-[26px] " symbol="<" />
             </li>
             <li>
               <LinkPagination
                 w="w-[25px]"
-                h="h-[24px]"
                 symbol="1"
                 bg="bg-[#5932EA]"
                 text="text-white"
               />
             </li>
             <li>
-              <LinkPagination w="w-[25px]" h="h-[24px]" symbol="2" />
+              <LinkPagination w="w-[25px]" symbol="2" />
             </li>
             <li>
-              <LinkPagination w="w-[24px]" h="h-[24px]" symbol="3" />
+              <LinkPagination w="w-[24px]" symbol="3" />
             </li>
             <li>
-              <LinkPagination w="w-[26px]" h="h-[24px]" symbol="4" />
+              <LinkPagination w="w-[26px]" symbol="4" />
             </li>
             <li>
               <div className=" h-[24px]  flex justify-center items-center">
@@ -81,10 +80,10 @@ export const Customers = () => {
               </div>
             </li>
             <li>
-              <LinkPagination w="w-[25px]" h="h-[24px]" symbol="40" />
+              <LinkPagination w="w-[25px]" symbol="40" />
             </li>
             <li>
-              <LinkPagination w="w-[26px]" h="h-[24px]" symbol=">" />
+              <LinkPagination w="w-[26px]" symbol=">" />
             </li>
           </ul>
         </div>
