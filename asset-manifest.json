@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dashboard-test/static/css/main.d48cd342.css",
+    "main.js": "/dashboard-test/static/js/main.dc23d056.js",
+    "static/media/Poppins-Regular.ttf": "/dashboard-test/static/media/Poppins-Regular.4211496d0e075ffe7c2f.ttf",
+    "static/media/Poppins-Medium.ttf": "/dashboard-test/static/media/Poppins-Medium.c5eb70982e90502d0d01.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/dashboard-test/static/media/Poppins-SemiBold.090bd619384bb8d4c289.ttf",
+    "static/media/Poppins-Regular.woff": "/dashboard-test/static/media/Poppins-Regular.5eec1c2dba909c1231b0.woff",
+    "static/media/Poppins-SemiBold.woff": "/dashboard-test/static/media/Poppins-SemiBold.0fbc963ec1f1e2949614.woff",
+    "static/media/Poppins-Medium.woff": "/dashboard-test/static/media/Poppins-Medium.9cc158575d223b98f4bd.woff",
+    "static/media/icons.svg": "/dashboard-test/static/media/icons.6c8452100678b3c7cf5dae92d9b69949.svg",
+    "static/media/Hello Evano 👋🏼,.svg": "/dashboard-test/static/media/Hello Evano 👋🏼,.85e9d9f9d870170c94ffc39d566f1ba1.svg",
+    "static/media/logo.svg": "/dashboard-test/static/media/logo.fe984a6cdb2ef8c5a0b69a7ef20deea3.svg",
+    "index.html": "/dashboard-test/index.html",
+    "main.d48cd342.css.map": "/dashboard-test/static/css/main.d48cd342.css.map",
+    "main.dc23d056.js.map": "/dashboard-test/static/js/main.dc23d056.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d48cd342.css",
+    "static/js/main.dc23d056.js"
+  ]
+}
